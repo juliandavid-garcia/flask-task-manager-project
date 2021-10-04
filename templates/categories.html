@@ -3,7 +3,7 @@
 {% block content%}
     
     <h3 class="black-text text-darken-4 center-align">Manage Categories</h3>
-    
+
     <div class="row">
         <div class="col s12 center-align">
             <a href="{{ url_for('add_category')}}" class="btn-large black darken-2 text-white">Add Category <i class="fas fa-plus-square right"></i></a>
@@ -18,7 +18,7 @@
                 
                 </div>
                 <div class="card-action">
-                <a href="#" class="btn black">Edit</a>
+                <a href="{{ url_for('edit_category',category_id=category._id) }}" class="btn black">Edit</a>
                 <a href="#" class="btn white black-text">Delete</a>
                 </div>
             </div>
